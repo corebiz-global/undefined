@@ -16,7 +16,7 @@ module.exports = {
   // Platform specific configs for API
   api: {
     storeId: 'corelabiz',
-    workspace: 'master',
+    workspace: 'devliberato',
     environment: 'vtexcommercestable',
     hideUnavailableItems: true,
   },
