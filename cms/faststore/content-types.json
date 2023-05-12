@@ -1,0 +1,52 @@
+[
+  {
+    "id": "home",
+    "name": "Home Page",
+    "configurationSchemaSets": []
+  },
+  {
+    "id": "institutionalPage",
+    "name": "Institutional page",
+    "configurationSchemaSets": [
+      {
+        "name": "SEO",
+        "configurations": [
+          {
+            "name": "siteMetadataWithSlug",
+            "schema": {
+              "title": "Site Metadata",
+              "description": "Configure global site metadata",
+              "type": "object",
+              "widget": {
+                "ui:ObjectFieldTemplate": "GoogleSeoPreview"
+              },
+              "properties": {
+                "title": {
+                  "title": "Default page title",
+                  "description": "Display this title when no other tile is available",
+                  "type": "string",
+                  "default": "Store Theme | VTEX SFJ"
+                },
+                "description": {
+                  "title": "Meta tag description",
+                  "type": "string",
+                  "default": "A beautifully designed site for general VTEX stores"
+                },
+                "titleTemplate": {
+                  "title": "Title template to be used in category/product pages",
+                  "type": "string",
+                  "default": "%s | Store Theme"
+                },
+                "slug": {
+                  "title": "URL Slug",
+                  "type": "string",
+                  "default": "/landing-page-url"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
